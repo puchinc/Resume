@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Times New Roman} % Main document font
+
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage{balance}
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{booktabs}
+\usepackage{xspace}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+\usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0,0} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{5pt}{0pt} % Spacing around sections
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=15mm,
+ bottom=0mm,
+ }
+
+\newcommand\st{\textsuperscript{st}\xspace}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr12]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\vspace*{-1.3cm}
+\par{\centering{\Huge Pu-Chin \textsc{Chen}}\par} % Your name
+% \section{Personal Data}
+
+% \begin{tabular}{rl}
+\centering{
+	\href{mailto:puchinchen@ucla.edu}{\underline{puchinchen@ucla.edu}}\hspace{5 mm} +(886) 921 448810 \hspace{10 mm} \href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} michaelchen110}\\
+	% 6F., No.15, Aly. 46, Ln. 553, Sec. 4, Zhongxiao E. Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)
+% \textsc{Research Interests:} &  Machine Learning,  Human Computer Interaction, \\
+% & Statistics, UI/UX, Web development\\
+
+% \end{tabular}
+
+
+% ----------------------------------------------------------------------------------------
+% 	RESEARCH INTERESTS 
+% ----------------------------------------------------------------------------------------
+% \vspace*{-4pt}
+% \section{\textbf{Areas of Interest}}
+%
+% \begin{tabular}{rl}
+% Data Science, Machine Learning, Statistics, Mathematics, Front-End Web Development
+% \end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+% \vfill
+\vspace*{-5pt}
+
+\section{\textbf{Education}}
+
+% \begin{tabular}{rl}	
+\begin{tabular}{p{16cm}}
+	\textsc \normalsize\textbf{University of California, Los Angeles}  \hfill  \it{Sept. 2016-June 2018(expected)}\\
+\href{http://www.msol.ucla.edu/data-science-engineering/}{M.S. in Data Science Engineering (distance education in my 1\st year)} \\
+
+\vspace{0.5mm}
+\textsc \normalsize\textbf{University of California, Berkeley}  \hfill  \it{July 2013-Aug. 2013}\\
+Summer Program  \hfill \normalsize \it{GPA: 3.7/4.0} \\
+
+
+% \multicolumn{2}{c}{} \\
+\vspace{0.5mm}
+\textsc \normalsize\textbf{National Taiwan University (NTU)} \hfill  \it{Sept. 2011-June 2015}\\
+\href{https://www.csie.ntu.edu.tw}{B.S. in Computer Science \& Information Engineering (CSIE)} 
+% \hfill \it{Overall GPA: 3.16/4.3; Last 60 GPA: 3.52/4.3}\\
+\hfill \it{Last 60 GPA: 3.46/4.0}\\ 
+% &\\
+% \begin{itemize}
+% \vspace{2mm}
+% \item Adapted to an unfamiliar environment. Comfortable working with people from different cultures.
+% \item Cultuvated strong listening and communication skills. \vspace*{-\baselineskip}
+% \end{itemize}\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Project Experience}}
+\begin{tabular}{p{16cm}}
+
+\normalsize\textbf{Movie Database System with Web Interface}, {\it{Database Systems}}, UCLA \hfill {\it Sept. 2016-Oct. 2016}
+\vspace{0.5mm}
+\begin{itemize}
+\item Launched a movie database system using MySQL with PHP and Apache2 server handling \textbf{100,000+} data.
+\item Unified a variety of querying, browsing and data adding functionality as an easy-to-use Web Service.\vspace*{-\baselineskip}
+\end{itemize} \\
+\vspace{0.5mm}
+
+\normalsize\textbf{\href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{Fleat: Manipulating Drones by Hand Gestures}}, {\it{Treehacks Hackathon}}, Stanford \hfill {\it Feb. 20th-22nd, 2015}
+
+\vspace{0.5mm}
+\begin{itemize}
+\item Created a body-controlled drone system by Java and Kinect, attracting \textbf{2} companies for potential cooperation. 
+\item Achieved \textbf{90\%+} accuracy to recognise \textbf{8} gestures in real-time using K-nearest neighbour algorithm.
+\item Proposed speed-detection algorithms reducing \textbf{10-25\%} time delay due to inertia forces. \vspace*{-\baselineskip}
+\end{itemize} \\
+\vspace{0.5mm}
+
+\normalsize\textbf{User Defined Gestures for Flying Objects}, {\it{Bachelor Thesis}}, NTU \hfill {\it June 2014-Oct. 2014}
+\vspace{0.5mm}
+\begin{itemize}
+\item Summarised a set of most intuitive in-air gestures reflecting user behaviours such as ease of recognition, consistency, reversibility, and versatility, making it a good candidate for deployment in drone systems.
+\item Presented a taxonomy useful for analysing and characterising gestures in drone development.\vspace*{-\baselineskip} 
+% through 176 gestures from 16 participants
+\end{itemize} \\
+\vspace{0.5mm}
+
+\normalsize\textbf{Level Learning: Classify Tutorials by Difficulty}, {\it{Web Retrieval and Mining}}, NTU \hfill {\it Mar. 2014-June 2014}
+\vspace{0.5mm}
+\begin{itemize}
+\item Extracted text features using TF-IDF concept from online learning tutorials crawled by Python.
+\item Ranked \textbf{10} levels of documents difficulty for each query using semi-supervised learning.\vspace*{-\baselineskip}
+	% k means
+\end{itemize}\\
+\vspace{0.5mm}
+
+\normalsize\textbf{Handwriting Recognition System for Chinese Characters}, {\it{Machine Learning}}, NTU  \hfill {\it Nov. 2013-Jan. 2014}
+\vspace{0.5mm}
+\begin{itemize}
+\item Improved \textbf{10-15\%} accuracy by image pre-processing(e.g. trim redundant margin, normalise font size).
+ % and standardizing font size
+\item Experimented several models(e.g. SVM, linear regression) and got \textbf{82.1\%} accuracy using random forest.\vspace*{-\baselineskip}
+\end{itemize}\\
+\vspace{0.5mm}
+
+\normalsize\textbf{Role-Playing Game}, {\it{Object-Oriented Programming}}, NTU \hfill {\it Mar. 2013-June 2013}
+\vspace{0.5mm}
+\begin{itemize}
+\item Developed core game features including dialog system, sound effects, moving animation, bag for holding accessories, map switching and keyboard control system using Java Swing GUI.
+\item Designed a map editor for utilising image elements and generating multiple relational maps.  \vspace*{-\baselineskip}
+\end{itemize}\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+\section{\textbf{Work \& Leadership Experience}}
+
+\begin{tabular}{p{16cm}}
+	\normalsize\textbf{Mandatory Military Service}, {\it{Artillery Soldier}}, Taiwan (R.O.C) Army  \hfill \it Aug. 2015-Aug. 2016 \\%& {\it Dongyin, Taiwan} \\
+\begin{itemize}
+\vspace{-2mm}
+\item Served as a qualified 20 mm cannon operator. Proficient in PSTAR radar and DMS missile system mounting.\vspace*{-\baselineskip}
+\end{itemize} \\ 
+\vspace{0.5mm}
+
+\normalsize\textbf{Vice President}{\it, HackNTU}  \hfill \it{Mar. 2015-Aug. 2015}\\ %& \it Taipei, Taiwan\\
+\begin{itemize}
+\vspace{-2mm}
+\item Led an organisation with \textbf{9} departments of \textbf{68} members and \textbf{80} volunteers to host a \textbf{3-day} hackathon for more than \textbf{800} nationwide students and industry professionals.
+\item Achieved sponsorship for more than \textbf{NT\$3,000,000} through building collaborative partnership with \textbf{10} multinational enterprises such as 
+	Foxconn, Taipei City Government, Tutor ABC, Plug\&Play, CyberLink. \vspace*{-\baselineskip}
+\end{itemize}\\
+\vspace{0.5mm}
+
+\normalsize\textbf{Teaching Assistant}{\it, Data Structure and Algorithm}, NTU-CSIE  \hfill  \it{Mar. 2015-June 2015} \\%& \it Taipei, Taiwan\\
+\begin{itemize}
+\vspace{-2mm}
+\item Initiated and instructed Linux and Git foundation workshops first time in this course for a \textbf{200+} enrolled students class, which helped improve learning efficiency significantly from feed backs of most students.\vspace*{-\baselineskip}
+\end{itemize} \\ 
+\vspace{0.5mm}
+
+\normalsize\textbf{Back-End Engineer}{\it, Fountain Inc.}, Taipei, Taiwan \hfill  \it{Oct. 2014-Feb. 2015}  \\%& \it Taipei, Taiwan\\ 
+% \footnotesize{
+\begin{itemize}
+\vspace{-2mm}
+\item Designed schema and constructed database for our e-commerce platform by MongoDB and Java. 
+\item Established the network between Android client and Java server by socket programming. \vspace*{-\baselineskip}
+\end{itemize}\\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{Skills}}
+
+\begin{tabular}{p{16cm}}
+{\it{Languages:}} Native in Mandarin; Fluent in English\\
+{\it{Proficient in:}} Java, C/C++, SQL, PHP, JavaScript, NodeJS, HTML, Git\\
+{\it{Familiar with:}} Python, MongoDB, ReactJS, UNIX shell scripting, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}
+
+% Programming Languages: & C/C++, JAVA, Python, UNIX shell scripting, HTML
+% 			\\&		   
+% 			Javascript, Node.js, Verilog, Assembly, MongoDB, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+% 			&\\
+
+% Develop \& Prototyping Tools: & Microsoft Kinect, AR.drone, processing, Bootstrap,\\
+% & Sketch, Adobe Illustrator, Adobe Photoshop\\
+% &\\
+
+% Languages: & \textsc{Mandarin Chinese(native)}, \textsc{English(fluent)}\\
+% &\\
+
+\end{tabular}
+
+\end{document}
