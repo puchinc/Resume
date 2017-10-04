@@ -98,19 +98,18 @@ bottom=0mm,
 {\it M.S. in Computer Science} \hfill  Sept. 2016-Present
 \begin{itemize}
 \item Research Area: Natural Language Processing; Advisor: Kai-Wei Chang
-\item Coursework: Database Systems, Data Mining, Data Science Principles, Computer Security%; Anticipated Courses: %; GRE: Q170
+\item Coursework: Database Systems, Data Mining, Data Science Principles, Natural Language Processing, Computer Security; Anticipated Courses: Software Engineering, Artificial Intelligence%; GRE: Q170
 \item GPA: 3.93/4.0; GRE: Q170/170 (\textbf{Top 3\%})\vspace*{-\baselineskip}
 \end{itemize}\\ 
 \vspace{.1mm}
 % \textsc \normalsize\textbf{University of California, Berkeley}  \hfill  \it{July 2013-Aug. 2013}\\ % Summer School \hfill \normalsize \it{GPA: 3.7/4.0} \\
 %
-
 % \multicolumn{2}{c}{} \\
 % \vspace{0.5mm}
 {\bf{National Taiwan University (NTU)}} \hfill \bf{Taipei, Taiwan}\\
 {\it B.S. in Computer Science} \hfill Sept. 2011-June 2015
 \begin{itemize}
-\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Object-Oriented Software Design, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics 
+\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics 
 \item Taiwan National College Entrance Exam (AST):  Math: 100/100 (\textbf{Top 1\%}); Physics: 99/100 (\textbf{Top 0.1\%})\vspace*{-\baselineskip}
 \end{itemize} 
 % \hfill \it{Overall GPA: 3.16/4.3; Last 60 GPA: 3.52/4.3}\\
@@ -127,9 +126,9 @@ bottom=0mm,
 {\it KKBOX} \hfill  Summer 2017\\%& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-3mm}
-\item Refactored music genre prediction system from Theano to Tensorflow and reduced 60\% of code size
-\item Implemented wide-and-deep model to ensemble music signals and lyrics features extracted by word2vec
-\item Constructed deep learning pipelines using Docker including lyric crawler and ETL tools \vspace*{-\baselineskip}
+\item Reduced {\bf 60\%} of code size by refactoring music genre prediction system from Theano to Tensorflow/Keras 
+\item Extracted audio to instruments, styles or acoustic properties by convolutional neural network; built document embedding for lyrics adapted from word2vec model; ensembled features using wide-and-deep algorithm 
+\item Constructed deep learning pipeline and deployed on Docker, including crawler, word parser and ETL tools  \vspace*{-\baselineskip}
 \end{itemize} \\ 
 \vspace{.1mm}
 
@@ -137,31 +136,13 @@ bottom=0mm,
 {\it Far EasTone Telecommunications Co.} \hfill  Winter 2017\\%& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-3mm}
-\item Optimized MySQL database with {\bf30000\%} improvement from exponential to linear time (e.g. 1 week to 30 mins); expanded scalability of data wrangling system and paralleled tasks under Linux architecture
-\item Extracted features from {\bf billions} of daily machine-generated data; transformed hundreds of time series and spatial attributes to business interpretable variables; built customer satisfaction forecasting model using Python sklearn
-\item Analyzed customer behavior and lifestyle from {\bf7 million} users through trajectory mining and time series clustering using discrete wavelet transform; eliminated anomaly data uising outlier detection\vspace*{-\baselineskip}
+\item Optimized MySQL database with {\bf300X} improvement from exponential to linear time (e.g. 1 week to 30 mins) 
+\item Produced features from {\bf billions} of daily machine-generated data; transformed hundreds of time series and spatial attributes to business interpretable variables; expanded scalability of data pipeline 
+\item Analyzed lifestyle from {\bf7 million} customers through time series clustering using discrete wavelet transform\vspace*{-\baselineskip}
 \end{itemize} 
+%\item Analyzed lifestyle from {\bf7 million} customers through trajectory mining and time series clustering using discrete wavelet transform; eliminated anomaly data uising outlier detection\vspace*{-\baselineskip}
+%\end{itemize} 
 \vspace{.1mm}
-
-% {\bf{Teaching Assistant}} \hfill \textbf{Taipei, Taiwan}\\
-% {\it Data Structures and Algorithms} \hfill  Mar. 2015-June 2015 \\%& \it Taipei, Taiwan\\
-% \begin{itemize}
-% \vspace{-3mm}
-% \item Developed grading tools by Linux for programming assignments; resolved students' questions in a timely manner.
-% \item Coordinated with teacher and other TAs to increase students' performance; initiated and instructed Linux and Git workshops for a 200+ enrolled students class, improving learning efficiency from students' feedbacks.\vspace*{-\baselineskip}
-% \end{itemize} \\
-% \vspace{0.5mm}
-%
-
-%{\bf{Database Administrator}} \hfill \bf{Taipei, Taiwan}\\ 
-%{\it DiQi Inc. (Blockchain Technology Startup)}\hfill  Oct. 2014-Feb. 2015  \\%& \it Taipei, Taiwan\\ 
-%% \footnotesize{
-%\begin{itemize}
-%\vspace{-3mm}
-%\item Communicated with business partner and identified client needs, striking a balance between their requirements 
-%\item Conducted in-depth research and analysis on user habits to design database schema
-%\item Constructed NoSQL server using MongoDB and monitored database performance on a daily basis; established the network between Android client apps and server by socket programming using Java \vspace*{-\baselineskip}
-%\end{itemize}\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -171,17 +152,31 @@ bottom=0mm,
 \section{\Large\bf\textsc{Selected Projects}}
 \begin{tabular}{p{18.5cm}}
 
-{\bf{Movie Database System with Web Interface}}, {\it{Database Systems}} \hfill {\bf{UCLA}}
+%{\bf{Analyzing The Analyzers on StackOverflow Job Survey}}, {\it{Data Science Principles}} \hfill {\bf{UCLA}}
+%\begin{itemize}
+%\item Preprocessed noisy data and handled missing value by scikit-learn and pandas \hfill Spring 2017
+%\item Analyzed data scientists characteristics by extracting latent vector using Nonnegative Matrix Factorization \vspace*{-\baselineskip}
+%\end{itemize} \\
+%\vspace{.1mm}
+
+{\bf{Debate about Models on Personality}}, {\it{Data Science Principles}} \hfill {\bf{UCLA}}
 \begin{itemize}
-\item Unified a variety of querying, browsing and data adding functionality as an easy-to-use Web Service \hfill Fall 2016
-\item Launched a movie database system using MySQL with PHP and Apache2 server handling 100,000+ data\vspace*{-\baselineskip}
+\item Measured discriminatory power on personality with traditional taxonomic models and new dimensional models %\hfill Spring 2017
+\item Explored the cluster structure of personalities using k-means and estimated the number of clusters via the gap statistic; studied dimensional structure using PCA and identified the number of dimensions through plot analysis\vspace*{-\baselineskip}
 \end{itemize} \\
 \vspace{.1mm}
 
+%{\bf{Movie Database System with Web Interface}}, {\it{Database Systems}} \hfill {\bf{UCLA}}
+%\begin{itemize}
+%\item Unified a variety of querying, browsing and data adding functionality as an easy-to-use Web Service %\hfill Fall 2016
+%\item Launched a movie database system using MySQL with PHP and Apache2 server handling 100,000+ data\vspace*{-\baselineskip}
+%\end{itemize} \\
+%\vspace{.1mm}
+
 \href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\bf{Manipulating Drones by Gestures Recognition}}, {\it{Bachelor Thesis Project}} \hfill {\bf{Stanford}}
 \begin{itemize}%[leftmargin=25pt]
-\item Achieved 90\%+ accuracy to recognize 8 gestures in real-time using K-nearest neighbor algorithm \hfill Winter 2015 
-\item Created a body-controlled drone system within 36 hours using Java to control Kinect and AR.Drone; proposed speed-detection algorithms reducing 10-25\% time delay caused by inertia forces
+\item Achieved 90\%+ accuracy to recognize 8 gestures in real-time using K-nearest neighbor algorithm %\hfill Winter 2015 
+\item Created a body-controlled drone system within 36 hours using Java to control Kinect and AR.Drone
 \item Represented NTU in 2015 Stanford Treehacks Hackathon, attracting 2 companies for potential cooperation \vspace*{-\baselineskip}
 % \item Summarised a set of most intuitive in-air gestures reflecting user behaviours such as ease of recognition, consistency, reversibility, and versatility, making it a good candidate for deployment in drone systems; presented a taxonomy useful for analysing and characterising gestures in drone development.\vspace*{-\baselineskip}
 \end{itemize}\\
@@ -189,31 +184,9 @@ bottom=0mm,
 
 {\bf{Level Learning: Classify Tutorials by Difficulty}}, {\it{Web Retrieval and Mining}} \hfill {\bf{NTU}}
 \begin{itemize}
-\item Explored text features using TF-IDF concept from online learning tutorials crawled by Python \hfill Spring 2014
+\item Generated text features using TF-IDF concept from online learning tutorials crawled by Python %\hfill Spring 2014
 \item Ranked 10 levels of documents difficulty for each query using semi-supervised learning\vspace*{-\baselineskip}
 \end{itemize}\\
-%
-% {\bf{Handwriting Recognition System for Chinese Characters}}, {\it{Machine Learning}} \hfill \textbf{NTU}
-% \begin{itemize}
-% \item Improved 10-15\% accuracy by data cleaning and image pre-processing.\hfill Winter 2014
-% % and standardizing font size
-% \item Experimented several models(e.g. SVM, linear regression) and got 82.1\% accuracy using random forest.\vspace*{-\baselineskip}
-% \end{itemize}\\
-% \vspace{.1mm}
-%
-% {\bf{\href{http://people.ischool.berkeley.edu/~charleswang/i153/final/facetBrowser/index.html}{Majoraha: A Salary-Oriented Platform for College Major}}}, {\it{Web Application}} \hfill {\bf{UC Berkeley}}
-% \begin{itemize}
-% \item Analyzed data crawled from 3 websites, presenting impacts of college majors on future earnings. \hfill Summer 2013
-% % \item Ranked average starting salary, average mid-career salary and growth in pay over university majors.
-% \item Visualized breakdown of salaries in relation to majors by bar chart, pie chart and bubble chart using D3.js. \vspace*{-\baselineskip}
-% \end{itemize}\\
-%
-% {\fontsize{11}{13.2}\textbf{Role-Playing Game}}, {\it{Object-Oriented Programming}} \hfill \textbf{NTU}
-% \vspace{0.5mm}
-% \begin{itemize}
-% \item Designed a map editor for utilising image elements and generating multiple relational maps.  \hfill Mar. 2013-June 2013
-% \item Developed core game features including dialog system, sound effects, moving animation, bag for holding accessories, map switching and keyboard control system using Java Swing GUI.\vspace*{-\baselineskip}
-% \end{itemize}\\
 %
 \end{tabular}
 
