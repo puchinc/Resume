@@ -21,11 +21,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,11pt]{article} % Default font size and paper size
+%\documentclass[a4paper,10.5pt]{article} % Default font size and paper size
+\documentclass[letterpaper,11pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Calibri} % Main document font
+%\usepackage{ebgaramond,newtxmath,ebgaramond-maths}
+%\usepackage{garamondx}
+%\usepackage{ebgaramond}
 
 \usepackage{array}
 \usepackage{enumitem}
@@ -70,14 +74,16 @@ bottom=0mm,
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
-\vspace*{-1.3cm}
+%\vspace*{-1.3cm}
+\vspace*{-1cm}
 \par{\centering{\huge\textbf{PU-CHIN CHEN}}\par} % Your name
 % \section{Personal Data}
 
 % \begin{tabular}{rl}
 \centering{
 10933 Rochester Ave., Los Angeles, CA 90024, USA\\
-+1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@cs.ucla.edu}{\underline{puchinchen@cs.ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://www.linkedin.com/in/puchinchen}{\faLinkedinSign \hspace{1 mm}\underline{www.linkedin.com/in/puchinchen}} %\hspace{2 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
++1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@cs.ucla.edu}{\underline{puchinchen@cs.ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://michaelchen110.github.io}{\faGithub \hspace{1 mm}\underline{https://michaelchen110.github.io/}} %\hspace{2 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
+%+1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@cs.ucla.edu}{\underline{puchinchen@cs.ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://www.linkedin.com/in/puchinchen}{\faLinkedinSign \hspace{1 mm}\underline{www.linkedin.com/in/puchinchen}} %\hspace{2 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
 % \textsc{Research Interests:} &  Machine Learning,  Human Computer Interaction, \\
 % & Statistics, UI/UX, Web development\\
 
@@ -95,11 +101,12 @@ bottom=0mm,
 % \begin{tabular}{rl}	
 \begin{tabular}{p{18.5cm}}
 {\bf{University of California, Los Angeles (UCLA)}}  \hfill \bf{Los Angeles, CA}\\
-{\it M.S. in Computer Science} \hfill  Sept. 2016-Present
+{\it M.S. in Computer Science} \hfill  2016 - Dec. 2018 (expected)
 \begin{itemize}
-\item Research Area: Natural Language Processing; Advisor: Kai-Wei Chang
-\item Coursework: Database Systems, Data Mining, Data Science Principles, Natural Language Processing, Computer Security; Anticipated Courses: Software Engineering, Artificial Intelligence%; GRE: Q170
-\item GPA: 3.93/4.0; GRE: Q170/170 (\textbf{Top 3\%})\vspace*{-\baselineskip}
+\item \textbf{GPA: 3.93/4.0}; GRE: Q170/170 (\textbf{Top 3\%})
+%\item GPA: 3.93/4.0; GRE: Q170/170 (Top 3\%)
+\item Research Area: Natural Language Processing; Advisor: Kai-Wei Chang 
+\item Coursework: Database Systems, Data Mining, Data Science Principles, Natural Language Processing, Computer Security; Anticipated Courses: Software Engineering, Artificial Intelligence \vspace*{-\baselineskip}%; GRE: Q170
 \end{itemize}\\ 
 \vspace{.1mm}
 % \textsc \normalsize\textbf{University of California, Berkeley}  \hfill  \it{July 2013-Aug. 2013}\\ % Summer School \hfill \normalsize \it{GPA: 3.7/4.0} \\
@@ -107,10 +114,11 @@ bottom=0mm,
 % \multicolumn{2}{c}{} \\
 % \vspace{0.5mm}
 {\bf{National Taiwan University (NTU)}} \hfill \bf{Taipei, Taiwan}\\
-{\it B.S. in Computer Science} \hfill Sept. 2011-June 2015
+{\it B.S. in Computer Science} \hfill 2011 - 2015
 \begin{itemize}
-\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics 
-\item Taiwan National College Entrance Exam (AST):  Math: 100/100 (\textbf{Top 1\%}); Physics: 99/100 (\textbf{Top 0.1\%})\vspace*{-\baselineskip}
+\item National College Entrance Exam:  Math: 100/100 (\textbf{Top 1\%}); Physics: 99/100 (\textbf{Top 0.1\%})
+%\item National College Entrance Exam:  Math: 100/100 (Top 1\%); Physics: 99/100 (Top 0.1\%)
+\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics \vspace*{-\baselineskip} 
 \end{itemize} 
 % \hfill \it{Overall GPA: 3.16/4.3; Last 60 GPA: 3.52/4.3}\\
 % \hfill \it{Last 60 GPA: 3.46/4.0}\\
@@ -123,12 +131,15 @@ bottom=0mm,
 \begin{tabular}{p{18.5cm}}
 
 {\bf{Machine Learning Intern}} \hfill \bf{Taipei, Taiwan}\\
-{\it KKBOX} \hfill  Summer 2017\\%& \it Taipei, Taiwan\\
+{\it KKBOX} | {\it Asia's Leading Music Streaming Service } \hfill  Summer 2017\\%& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-3mm}
-\item Reduced {\bf 60\%} of code size by refactoring music genre prediction system from Theano to Tensorflow/Keras 
-\item Extracted audio to instruments, styles or acoustic properties by convolutional neural network; built document embedding for lyrics adapted from word2vec model; ensembled features using wide-and-deep algorithm 
-\item Constructed deep learning pipeline and deployed on Docker, including crawler, word parser and ETL tools  \vspace*{-\baselineskip}
+%\item Reduced 60\% of code size by refactoring music genre prediction system from Theano to Tensorflow/Keras 
+%\item Constructed deep learning pipeline and deployed on {\bf Docker}, including crawler, word parser and ETL tools  
+\item Constructed deep learning pipeline with Python, MySQL and Shell Script; deployed to production using Docker
+\item Reduced {\bf 60\%} of code size by refactoring music genre classification system from Theano to {\bf Tensorflow/Keras} 
+\item Extracted high-level properties from audio by convolutional neural network; built document embedding for lyrics adapted from word2vec model; ensembled features using wide-and-deep algorithm and achieved {\bf 90\%} f1 score 
+\item Developed software in the agile research team using Scrum methodology \vspace*{-\baselineskip}
 \end{itemize} \\ 
 \vspace{.1mm}
 
@@ -137,8 +148,8 @@ bottom=0mm,
 \begin{itemize}
 \vspace{-3mm}
 \item Optimized MySQL database with {\bf300X} improvement from exponential to linear time (e.g. 1 week to 30 mins) 
-\item Produced features from {\bf billions} of daily machine-generated data; transformed hundreds of time series and spatial attributes to business interpretable variables; expanded scalability of data pipeline 
-\item Analyzed lifestyle from {\bf7 million} customers through time series clustering using discrete wavelet transform\vspace*{-\baselineskip}
+\item Analyzed lifestyle from 7 million customers through time series clustering using discrete wavelet transform
+\item Created features from billions of daily machine-generated data; transformed hundreds of time series and spatial attributes to business interpretable variables using Python; expanded scalability of data pipeline \vspace*{-\baselineskip}
 \end{itemize} 
 %\item Analyzed lifestyle from {\bf7 million} customers through trajectory mining and time series clustering using discrete wavelet transform; eliminated anomaly data uising outlier detection\vspace*{-\baselineskip}
 %\end{itemize} 
@@ -149,44 +160,42 @@ bottom=0mm,
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
-\section{\Large\bf\textsc{Selected Projects}}
+%\section{\Large\bf\textsc{Selected Projects}}
+\section{\Large\bf\textsc{Research Experience}}
 \begin{tabular}{p{18.5cm}}
 
-%{\bf{Analyzing The Analyzers on StackOverflow Job Survey}}, {\it{Data Science Principles}} \hfill {\bf{UCLA}}
-%\begin{itemize}
-%\item Preprocessed noisy data and handled missing value by scikit-learn and pandas \hfill Spring 2017
-%\item Analyzed data scientists characteristics by extracting latent vector using Nonnegative Matrix Factorization \vspace*{-\baselineskip}
-%\end{itemize} \\
-%\vspace{.1mm}
-
-{\bf{Debate about Models on Personality}}, {\it{Data Science Principles}} \hfill {\bf{UCLA}}
-\begin{itemize}
-\item Measured discriminatory power on personality with traditional taxonomic models and new dimensional models %\hfill Spring 2017
-\item Explored the cluster structure of personalities using k-means and estimated the number of clusters via the gap statistic; studied dimensional structure using PCA and identified the number of dimensions through plot analysis\vspace*{-\baselineskip}
-\end{itemize} \\
-\vspace{.1mm}
-
 %{\bf{Movie Database System with Web Interface}}, {\it{Database Systems}} \hfill {\bf{UCLA}}
+%{\bf{Movie Database System with Web Interface}} | {\it{Database Systems}} \hfill Fall 2016
 %\begin{itemize}
 %\item Unified a variety of querying, browsing and data adding functionality as an easy-to-use Web Service %\hfill Fall 2016
 %\item Launched a movie database system using MySQL with PHP and Apache2 server handling 100,000+ data\vspace*{-\baselineskip}
 %\end{itemize} \\
 %\vspace{.1mm}
 
-\href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\bf{Manipulating Drones by Gestures Recognition}}, {\it{Bachelor Thesis Project}} \hfill {\bf{Stanford}}
-\begin{itemize}%[leftmargin=25pt]
-\item Achieved 90\%+ accuracy to recognize 8 gestures in real-time using K-nearest neighbor algorithm %\hfill Winter 2015 
-\item Created a body-controlled drone system within 36 hours using Java to control Kinect and AR.Drone
-\item Represented NTU in 2015 Stanford Treehacks Hackathon, attracting 2 companies for potential cooperation \vspace*{-\baselineskip}
-% \item Summarised a set of most intuitive in-air gestures reflecting user behaviours such as ease of recognition, consistency, reversibility, and versatility, making it a good candidate for deployment in drone systems; presented a taxonomy useful for analysing and characterising gestures in drone development.\vspace*{-\baselineskip}
-\end{itemize}\\
+{\bf{Character Identification in Multiparty Dialogue with Neural Coreference Resolution}} | {\it{UCLA NLP Lab}} \hfill Winter 2017
+\begin{itemize}
+\item Identified mentions as certain characters in TV show dialogues; developed the system by integrating end-to-end coreference resolution system and entity linking model using Tensorflow 
+\item Constructed mention embeddings with Bi-LSTM and attention mechanism for mention head detection; optimized coreference scores by maximizing antecedent liklihood formed with mention pairs
+\item Implemented agglomerative convolutional neural network to predict character entities of each mention cluster predicted from the coreference system \vspace*{-\baselineskip}
+\end{itemize} \\
 \vspace{.1mm}
 
-{\bf{Level Learning: Classify Tutorials by Difficulty}}, {\it{Web Retrieval and Mining}} \hfill {\bf{NTU}}
-\begin{itemize}
-\item Generated text features using TF-IDF concept from online learning tutorials crawled by Python %\hfill Spring 2014
-\item Ranked 10 levels of documents difficulty for each query using semi-supervised learning\vspace*{-\baselineskip}
+%\href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\bf{Manipulating Drones by Gestures Recognition}} | {\it{Bachelor Thesis Project}} \hfill {\bf{Stanford}}
+\href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\bf{Flying Drones with Hand-Gesture Recognition}} | {\it NTU Human-Computer Interaction Lab} \hfill  June 2014 - Feb. 2015
+\begin{itemize}%[leftmargin=25pt]
+\item Achieved 90\%+ accuracy to recognize 8 gestures in real-time using K-nearest neighbor algorithm %\hfill Winter 2015 
+\item Built a body-controlled drone system within 36 hours using Java to control Kinect and AR.Drone
+\item Represented NTU in Stanford Treehacks Hackathon, attracting 2 companies for potential cooperation \vspace*{-\baselineskip}
+% \item Summarised a set of most intuitive in-air gestures reflecting user behaviours such as ease of recognition, consistency, reversibility, and versatility, making it a good candidate for deployment in drone systems; presented a taxonomy useful for analysing and characterising gestures in drone development.\vspace*{-\baselineskip}
 \end{itemize}\\
+%\vspace{.1mm}
+
+%{\bf{Level Learning: Classify Tutorials by Difficulty}} | {\it{Web Retrieval and Mining}} \hfill {\bf{NTU}}
+%{\bf{Level Learning: Classify Tutorials by Difficulty}} | {\it Web Retrieval and Mining} \hfill Spring 2014
+%\begin{itemize}
+%\item Generated text features using TF-IDF concept from online learning tutorials crawled by Python %\hfill Spring 2014
+%\item Ranked 10 levels of documents difficulty for each query using semi-supervised learning\vspace*{-\baselineskip}
+%\end{itemize}\\
 %
 \end{tabular}
 
@@ -196,12 +205,13 @@ bottom=0mm,
 \section{\Large\bf\textsc{Leadership Experience}}
 \begin{tabular}{p{18.5cm}}
 {\bf{Vice President}} \hfill \bf{Taipei, Taiwan}\\
-{\it NTU Hackathon Organization}\hfill Mar. 2015-Aug. 2015\\ %& \it Taipei, Taiwan\\
+{\it NTU Hackathon Organization}\hfill Mar. 2015 - Aug. 2015\\ %& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-2mm}
-\item Led an organization with 9 departments of 68 members and 80 volunteers to host a 3-day hackathon for more than 800 nationwide students and industry professionals; achieved the biggest hackathon event in Taiwan
-\item Integrated cross-department communication and directed a technical team to build official websites, web game and bicycle tail light for marketing purpose; technologies included NodeJS, ReactJS, AnuglarJS, Dart and Arduino\vspace*{-\baselineskip}
-% \item Achieved sponsorship for more than NT\$3,000,000 through building collaborative partnership with 10 multinational enterprises such as
+\item Led an organization with 9 departments of 68 members and 80 volunteers to host a 3-day hackathon for 850 nationwide students and industry professionals; achieved the biggest hackathon event in Taiwan
+\item Attained \$100,000 sponsorship through building collaborative partnership with 10 multinational enterprises\vspace*{-\baselineskip}
+%\item Integrated cross-department communication and directed a technical team to build official websites, web game and bicycle tail light for marketing purpose; technologies included NodeJS, ReactJS, AnuglarJS, Dart and Arduino\vspace*{-\baselineskip}
+%% \item Achieved sponsorship for more than NT\$3,000,000 through building collaborative partnership with 10 multinational enterprises such as
 % Foxconn, Taipei City Government, Tutor ABC, Plug\&Play, CyberLink. \vspace*{-\baselineskip}
 \end{itemize}\\
 \end{tabular}
@@ -213,10 +223,10 @@ bottom=0mm,
 
 \section{\Large\bf\textsc{Skills \& Interests}}
 \begin{tabular}{p{18.5cm}}
-{\bf{Programming Languages:}} Python, Java, C/C++, MySQL, JavaScript, R
-\hspace{0mm} {\bf{Languages:}} Native in Mandarin; Fluent in English\\
-{\bf{Tools:}} Tensorflow, Keras, Scikit-Learn, Docker, NodeJS, {\fb \LaTeX}
-\hspace{12.8mm} {\bf{Interests:}} \href{https://www.youtube.com/playlist?list=PLVWomxSv1AgmLxMTgWlp6P3LFdct88ImL}{Street Dance}, Coffee, History\\
+{\bf{Programming Languages:}} Java, Python, C/C++, MySQL, JavaScript, R
+\hspace{3mm} {\bf{Languages:}} Native in Mandarin; Fluent in English\\
+{\bf{Tools:}} Tensorflow, Keras, scikit-learn, Git, Linux, Docker, NodeJS, {\fb \LaTeX}
+\hspace{-0.8mm} {\bf{Interests:}} Vim, \href{https://www.youtube.com/playlist?list=PLVWomxSv1AgmLxMTgWlp6P3LFdct88ImL}{Street Dance}, Music\\
 %{\bf{Proficient in:}} Python, Tensorflow, Keras, Java, C/C++, MySQL, Docker 
 %\hspace{-0.7mm} {\bf{Familiar with:}} R, PHP, JavaScript, NodeJS, {\fb \LaTeX}\\
 % \normalsize\textbf{Interests:} Street Dance, Swing Dance, Chinese History\\
