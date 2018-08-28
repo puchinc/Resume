@@ -27,9 +27,7 @@
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Calibri} % Main document font
-%\usepackage{ebgaramond,newtxmath,ebgaramond-maths}
-%\usepackage{garamondx}
-%\usepackage{ebgaramond}
+%\setmainfont{Adobe Garamond Pro}
 
 \usepackage{array}
 \usepackage{enumitem}
@@ -51,7 +49,7 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{5pt}{0pt} % Spacing around sections
+\titlespacing{\section}{0pt}{10pt}{0pt} % Spacing around sections
 
 \usepackage{geometry}
 \geometry{
@@ -69,7 +67,7 @@ bottom=0mm,
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr12]'' % Change the font of the \LaTeX command under the skills section
+%\font\fb=''[cmr12]'' % Change the font of the \LaTeX command under the skills section
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
@@ -82,7 +80,7 @@ bottom=0mm,
 % \begin{tabular}{rl}
 \centering{
 10933 Rochester Ave., Los Angeles, CA 90024, USA\\
-    +1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@ucla.edu}{\underline{puchinchen@ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm}\underline{https://github.com/michaelchen110}} %\hspace{3 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
+    +1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@cs.ucla.edu}{\underline{puchinchen@cs.ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm}\underline{https://github.com/michaelchen110}} %\hspace{3 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
     %+1 (702) 217-0125 \hspace{2 mm}|\hspace{2 mm}\href{mailto:puchinchen@ucla.edu}{\underline{puchinchen@ucla.edu}}\hspace{2 mm}|\hspace{2mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm}\underline{https://github.com/michaelchen110}} %\hspace{3 mm}\href{https://github.com/michaelchen110}{\faGithub \hspace{1 mm} github.com/michaelchen110}\\
 
 % \end{tabular}
@@ -98,11 +96,12 @@ bottom=0mm,
 % \begin{tabular}{rl}	
 \begin{tabular}{p{18.5cm}}
 {\bf{University of California, Los Angeles (UCLA)}}  \hfill \bf{Los Angeles, CA}\\
-{\it M.S. in Computer Science} \hfill  2017 - Feb. 2019 (expected)
+{\it M.S. in Computer Science} \hfill  2017 - Mar. 2019 (expected)
 \begin{itemize}
-\item \textbf{GPA: 3.95/4.0}; GRE: Q170/170 (\textbf{Top 3\%})
+\item \textbf{GPA: 3.8/4.0}; GRE: Q170/170 (\textbf{Top 3\%})
 \item Research Area: Deep Learning in Natural Language Processing; Advisor: Kai-Wei Chang 
-\item Coursework: Statistical Modeling and Vision, Learning from Text, Natural Language Processing, Data Mining, Data Science Principles, Database Systems, Programming Languages, Computer Security \vspace*{-\baselineskip}%; GRE: Q170
+\item Coursework: Statistical Modeling and Vision, Learning from Text, Natural Language Processing, Data Mining, Data Science Principles, Database Systems, Programming Languages, Computer Security 
+\vspace*{-\baselineskip}%; GRE: Q170
 \end{itemize}\\ 
 \vspace{.1mm}
 % \textsc \normalsize\textbf{University of California, Berkeley}  \hfill  \it{July 2013-Aug. 2013}\\ % Summer School \hfill \normalsize \it{GPA: 3.7/4.0} \\
@@ -112,9 +111,10 @@ bottom=0mm,
 {\bf{National Taiwan University (NTU)}} \hfill \bf{Taipei, Taiwan}\\
 {\it B.S. in Computer Science} \hfill 2011 - 2015
 \begin{itemize}
-\item National College Entrance Exam:  Math: 100/100 (\textbf{Top 1\%}); Physics: 99/100 (\textbf{Top 0.1\%})
-%\item National College Entrance Exam:  Math: 100/100 (Top 1\%); Physics: 99/100 (Top 0.1\%)
-\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics \vspace*{-\baselineskip} 
+\item National College Entrance Exam:  Math: 100/100 (\textbf{Top 1\%}); Physics: 99/100 (\textbf{Top 0.1\%}) 
+\item Leadership: HackNTU Hackathon Organization - Vice President 
+%\item Coursework: Data Structures and Algorithms, Operating System, Computer Network, Machine Learning, Web Retrieval and Mining, Linear Algebra, Probability, Advanced Statistics 
+\vspace*{-\baselineskip}
 \end{itemize} 
 % \hfill \it{Overall GPA: 3.16/4.3; Last 60 GPA: 3.52/4.3}\\
 % \hfill \it{Last 60 GPA: 3.46/4.0}\\
@@ -126,31 +126,40 @@ bottom=0mm,
 \section{\Large\bf\textsc{Work Experience}}
 \begin{tabular}{p{18.5cm}}
 
-%{\bf{PayPal}} \hfill \bf{San Jose, CA}\\
-%{\it Cloud Engineer Intern} \hfill Summer 2018\\%& \it Taipei, Taiwan\\
-
-{\bf{Machine Learning Intern}} \hfill \bf{Taipei, Taiwan}\\
-{\it KKBOX} | {\it Asia's Leading Music Streaming Service } \hfill  May 2017 - Sep. 2017\\%& \it Taipei, Taiwan\\
+{\bf{PayPal}} \hfill \bf{San Jose, CA}\\
+{\it Software Engineering Intern} \hfill June 2018 - Present\\%& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-3mm}
-\item Constructed deep learning pipeline with Python, MySQL and Shell Script; deployed to production using Docker
-\item Reduced {\bf 60\%} of code size by refactoring music genre classification system from Theano to {\bf Tensorflow/Keras} 
+\item Built autonomous cloud patching dashboard in PaaS production, managing {\bf 2500} applications across all PayPal sites 
+\item Developed front-end in {\bf JavaScript} and {\bf ReactJS}; communicated with Tomcat Server in Java through RESTful APIs
+\item Implemented auto-encoder based clustering with Deep Neural Network by {\bf Tensorflow}, integrating models into {\bf NodeJS} back-end; identified and visualized hidden structrues of failed virtual machines with d3.js 
+\vspace*{-\baselineskip} 
+\end{itemize} \\ 
+\vspace{.1mm}
+
+%| {\it Asia's Leading Music Streaming Service }
+{\bf{KKBOX}} \hfill \bf{Taipei, Taiwan}\\
+{\it Machine Learning Intern} \hfill  May 2017 - Sep. 2017\\%& \it Taipei, Taiwan\\
+\begin{itemize}
+\vspace{-3mm}
+\item Constructed deep learning pipeline with {\bf Python}, {\bf MySQL} and Shell Script; deployed to production using {\bf Docker}
+\item Reduced {\bf 60\%} of code size by refactoring music genre classification system from Theano to {\bf Tensorflow} and Keras 
 \item Extracted high-level properties from audio by convolutional neural network; built document embedding for lyrics adapted from word2vec model; ensembled features using wide-and-deep algorithm and achieved {\bf 90\%} f1 score 
 \item Developed software in an agile research team using Scrum methodology \vspace*{-\baselineskip}
 \end{itemize} \\ 
 \vspace{.1mm}
 
 %pcpeng@fareastone.com.tw
-{\bf{Data Science Intern}} \hfill \bf{Taipei, Taiwan}\\
-{\it Far EasTone Telecommunications Co.} \hfill  Jan. 2017 - Apr. 2017\\%& \it Taipei, Taiwan\\
+{\bf{FarEasTone}} \hfill \bf{Taipei, Taiwan}\\
+{\it Data Science Intern} \hfill  Jan. 2017 - Apr. 2017\\%& \it Taipei, Taiwan\\
 \begin{itemize}
 \vspace{-3mm}
-\item Optimized MySQL database with {\bf300X} improvement from exponential to linear time (e.g. 1 week to 30 mins) 
+\item Optimized {\bf MySQL} database with {\bf300X} improvement from exponential to linear time (e.g. 1 week to 30 mins) 
 \item Analyzed lifestyle from 7 million customers through time series clustering using discrete wavelet transform
-\item Created features from billions of daily machine-generated data; transformed hundreds of time series and spatial attributes to business interpretable variables using Python; expanded scalability of data pipeline \vspace*{-\baselineskip}
+\item Created features from billions of daily machine-generated data; expanded scalability of data pipeline 
+\item Transformed hundreds of time series and spatial attributes to business interpretable variables using Python
+\vspace*{-\baselineskip}
 \end{itemize} 
-%\item Analyzed lifestyle from {\bf7 million} customers through trajectory mining and time series clustering using discrete wavelet transform; eliminated anomaly data uising outlier detection\vspace*{-\baselineskip}
-%\end{itemize} 
 \vspace{.1mm}
 \end{tabular}
 
@@ -164,25 +173,18 @@ bottom=0mm,
 
 \href{}{\bf{Attention Based Neural Grammar Correction}} | {\it{UCLA NLP Lab}} \hfill Spring 2018
 \begin{itemize}
-\item Corrected grammatical error sentences by sequence-to-sequence neural machine translation with attention, adding error tags as additional information; built with PyTorch
+\item Corrected grammatical error sentences by sequence-to-sequence neural machine translation with attention, adding error tags as additional information; built with {\bf PyTorch}
 \item Substitued traditional word embedding (word2vec and Glove) using deep contextualized word representations with language model (ELMo), capturing both syntactic forms and semantic meanings \vspace*{-\baselineskip}
 \end{itemize} \\
 \vspace{.1mm}
 
 \href{}{\bf{Character Identification in Multiparty Dialogue with Neural Coreference Resolution}} | {\it{UCLA NLP Lab}} \hfill Winter 2017
 \begin{itemize}
-\item Integrated end-to-end coreference resolution system with entity linking model using Tensorflow 
-\item Designed mention embeddings with Bi-LSTM and attention mechanism for mention head detection; optimized coreference scores by maximizing antecedent liklihood formed with mention pairs
-\item Implemented agglomerative convolutional neural network to predict character entities of each mention cluster predicted from the coreference system; identified mentions as certain characters in TV show dialogues\vspace*{-\baselineskip}
+\item Integrated end-to-end coreference resolution system with entity linking model using {\bf Tensorflow} 
+\item Designed mention embeddings with Bi-LSTM and attention mechanism for mention head detection 
+\item Optimized coreference scores by maximizing antecedent liklihood formed with mention pairs
+\item Applied agglomerative convolutional neural network to predict character entities in TV show dialogues\vspace*{-\baselineskip}
 \end{itemize} \\
-%\vspace{.1mm}
-
-%\href{https://www.youtube.com/watch?v=jxsZaQ6PcXU}{\bf{Flying Drones with Hand-Gesture Recognition}} | {\it NTU Human-Computer Interaction Lab} \hfill  June 2014 - Feb. 2015
-%\begin{itemize}%[leftmargin=25pt]
-%\item Achieved 90\%+ accuracy to recognize 8 gestures in real-time using K-nearest neighbor algorithm %\hfill Winter 2015 
-%\item Built a body-controlled drone system within 36 hours using Java to control Kinect and AR.Drone
-%\item Represented NTU in Stanford Treehacks Hackathon, attracting 2 companies for potential cooperation \vspace*{-\baselineskip}
-%\end{itemize}\\
 %\vspace{.1mm}
 
 \end{tabular}
@@ -190,18 +192,15 @@ bottom=0mm,
 %----------------------------------------------------------------------------------------
 %EXTRA CURRICULAR ACTIVITY	
 %------------------------------------------
-\section{\Large\bf\textsc{Leadership Experience}}
-\begin{tabular}{p{18.5cm}}
-{\bf{Vice President}} \hfill \bf{Taipei, Taiwan}\\
-{\it NTU Hackathon Organization}\hfill Mar. 2015 - Aug. 2015\\ %& \it Taipei, Taiwan\\
-\begin{itemize}
-\vspace{-2mm}
-\item Led an organization with 9 departments of 68 members and 80 volunteers to host a 3-day hackathon for 850 nationwide students and industry professionals; achieved the biggest hackathon event in Taiwan
-\item Attained \$100,000 sponsorship through building collaborative partnership with 10 multinational enterprises\vspace*{-\baselineskip}
-% Foxconn, Taipei City Government, Tutor ABC, Plug\&Play, CyberLink. \vspace*{-\baselineskip}
-\end{itemize}\\
-\end{tabular}
-%
+%\section{\Large\bf\textsc{Leadership Experience}}
+%\begin{tabular}{p{18.5cm}}
+%{\bf{Vice President}} | {\it NTU Hackathon Organization} \hfill Mar. 2015 - Aug. 2015\\ %& \it Taipei, Taiwan\\
+%\begin{itemize}
+%\vspace{-2mm}
+%\item Led an organization with 9 departments of 68 members and 80 volunteers to host a 3-day hackathon for 850 nationwide students and industry professionals; achieved the biggest hackathon event in Taiwan
+%\item Attained \$100,000 sponsorship through building collaborative partnership with 10 multinational enterprises \vspace*{-\baselineskip}
+%\end{itemize}\\
+%\end{tabular}
 %
 %----------------------------------------------------------------------------------------
 %	SKILLS 
@@ -209,13 +208,10 @@ bottom=0mm,
 
 \section{\Large\bf\textsc{Skills \& Interests}}
 \begin{tabular}{p{18.5cm}}
-{\bf{Programming Languages:}} Java, Python, C/C++, MySQL, JavaScript, R
+{\bf{Programming Languages:}} Python, JavaScript, Java, C/C++, MySQL
 \hspace{3mm} {\bf{Languages:}} Native in Mandarin; Fluent in English\\
-{\bf{Tools:}} Tensorflow, Keras, PyTorch, scikit-learn, Git, Linux, Docker
-\hspace{8.5mm} {\bf{Interests:}} Vim, \href{https://www.youtube.com/playlist?list=PLVWomxSv1AgmLxMTgWlp6P3LFdct88ImL}{Street Dance}, Music\\
-%{\bf{Proficient in:}} Python, Tensorflow, Keras, Java, C/C++, MySQL, Docker 
-%\hspace{-0.7mm} {\bf{Familiar with:}} R, PHP, JavaScript, NodeJS, {\fb \LaTeX}\\
-% \normalsize\textbf{Interests:} Street Dance, Swing Dance, Chinese History\\
+{\bf{Tools:}} Tensorflow, PyTorch, ReactJS, Git, Vim, Linux, Docker
+\hspace{13.2mm} {\bf{Interests:}} \href{https://www.youtube.com/playlist?list=PLVWomxSv1AgmLxMTgWlp6P3LFdct88ImL}{Street Dance}, Music\\
 \end{tabular}
 
 \end{document}
